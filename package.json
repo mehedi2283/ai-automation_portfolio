@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    
     "start": "tsx index.ts",
-    "dev": "PORT=3001 tsx watch index.ts"
+     "dev": "ts-node-dev --respawn --transpile-only index.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
