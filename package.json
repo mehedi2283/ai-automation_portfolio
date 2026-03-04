@@ -6,10 +6,10 @@
   "main": "dist/server/index.js",
   "type": "commonjs",
   "scripts": {
-     "dev": "ts-node-dev --respawn --transpile-only server/index.ts",
-    "build": "tsc",
-    "start": "node dist/server/index.js"
-  },
+  "dev": "ts-node-dev --respawn --transpile-only index.ts",
+  "build": "tsc",
+  "start": "node dist/index.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
