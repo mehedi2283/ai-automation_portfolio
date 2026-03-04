@@ -19,6 +19,15 @@ mongoose.connect(process.env.MONGO_URI as string)
 app.use('/api', portfolioRoutes);
 app.use('/api/admin', adminRoutes);
 
+app.get("/", (req, res) => {
+  res.status(200).send("API is running ✅");
+});
+
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
+
